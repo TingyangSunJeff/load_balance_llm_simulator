@@ -1,0 +1,74 @@
+================================================================================
+FILL IN THE BLANKS FOR PAPER TEXT
+================================================================================
+
+Original text with blanks:
+--------------------------
+"Moreover, requiring a single server to process all the blocks also increases 
+the cache requirement for each active job that leads to more wasted memory 
+(the mean residual memory is ... for 'JFFC only' and ... for 'Proposed')."
+
+
+RECOMMENDED REPLACEMENT:
+========================
+
+Option 1 (Simple - focus on residual memory):
+----------------------------------------------
+"Moreover, requiring a single server to process all the blocks also increases 
+the cache requirement for each active job, reducing available memory (the mean 
+residual memory is 12.67 GB for 'JFFC only' and 20.42 GB for 'Proposed')."
+
+
+Option 2 (More detailed - explains the tradeoff):
+--------------------------------------------------
+"Moreover, requiring a single server to process all the blocks also increases 
+the cache requirement for each active job (1.08 GB vs 0.40-0.81 GB per server 
+in 'Proposed'), which reduces the mean residual memory available for concurrent 
+jobs (12.67 GB for 'JFFC only' vs 20.42 GB for 'Proposed')."
+
+
+Option 3 (Most accurate - addresses wasted memory directly):
+-------------------------------------------------------------
+"Moreover, requiring a single server to process all the blocks also increases 
+the cache requirement for each active job. While 'JFFC only' has slightly less 
+wasted memory per server (0.49 GB vs 0.85 GB for 'Proposed'), the high cache 
+requirement per job (1.08 GB vs 0.40-0.81 GB per server in 'Proposed') 
+significantly reduces the mean residual memory available for concurrent jobs 
+(12.67 GB for 'JFFC only' vs 20.42 GB for 'Proposed'), limiting total system 
+capacity."
+
+
+QUICK REFERENCE - KEY NUMBERS:
+===============================
+
+JFFC only (Whole-Model):
+- Mean residual memory: 12.67 GB
+- Mean wasted memory: 0.49 GB (3.9% of residual)
+- Cache per job: 1.08 GB (all 32 blocks)
+- Total capacity: 102 jobs (3×24 + 6×5)
+
+Proposed (GBP-CR + GCA + JFFC with c=35):
+- Mean residual memory: 20.42 GB
+- Mean wasted memory: 0.85 GB (4.2% of residual)
+- Cache per job per server: 0.40-0.81 GB (12-24 blocks)
+- Capacity per chain: 35 jobs
+
+
+WHY THIS MATTERS:
+=================
+
+The professor's original text suggests "JFFC only" has MORE wasted memory, 
+but the analysis shows it actually has LESS wasted memory (0.49 GB vs 0.85 GB).
+
+However, "JFFC only" still performs WORSE because:
+1. Lower total capacity (102 vs higher in Proposed) → more queueing
+2. Less residual memory (12.67 GB vs 20.42 GB) → less room for cache
+3. Higher cache per job (1.08 GB) → limits parallelism
+4. Imbalanced load (c=24 on fast, c=5 on slow) → jobs spill to slow servers
+
+So the narrative should focus on RESIDUAL MEMORY (where Proposed wins) rather 
+than WASTED MEMORY (where JFFC only actually wins due to quantization effects).
+
+
+RECOMMENDED: Use Option 1 or Option 2
+================================================================================

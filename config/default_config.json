@@ -1,0 +1,50 @@
+{
+  "description": "Default configuration using PETALS-profiled parameters for BLOOM-176B",
+  
+  "system": {
+    "num_servers": 9,
+    "num_blocks": 70,
+    "block_size": 1.32,
+    "cache_size": 0.085,
+    "model_name": "BLOOM-176B"
+  },
+  
+  "servers": {
+    "high_performance": {
+      "type": "A100",
+      "memory_size": 79.13,
+      "comm_time": 5.0,
+      "comp_time": 3.2197
+    },
+    "low_performance": {
+      "type": "MIG",
+      "memory_size": 8.2,
+      "comm_time": 15.0,
+      "comp_time": 16.2488
+    },
+    "high_performance_fraction": 0.2
+  },
+  
+  "network": {
+    "topology_file": "topology/Abvt.graph",
+    "overhead_delay_per_token_ms": 100,
+    "overhead_delay_petals_ms": 18,
+    "initial_delay_ms": 70
+  },
+  
+  "simulation": {
+    "num_requests": 100,
+    "output_tokens": 128,
+    "input_tokens": 20,
+    "arrival_rate_per_ms": 0.0001,
+    "warmup_time": 1000,
+    "random_seed": 42,
+    "num_monte_carlo_runs": 5
+  },
+  
+  "algorithms": {
+    "block_placement": "GBP_CR",
+    "cache_allocation": "GCA",
+    "job_scheduling": "JFFC"
+  }
+}

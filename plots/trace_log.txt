@@ -1,0 +1,175 @@
+Loading Azure LLM Inference Trace...
+
+Total records: 8819
+Date range: 2023-11-16 18:17:03.979960 to 2023-11-16 19:14:19.928016
+Duration: 0 days
+
+============================================================
+FULL DATASET ANALYSIS
+============================================================
+
+============================================================
+Statistics for Input Token Length (ContextTokens)
+============================================================
+Mean:                    2047.85
+Median (p50):            1469.00
+Standard Deviation:      1973.77
+p90:                     5187.60
+p95:                     7303.30
+p99:                     7436.00
+Min:                     3.00
+Max:                     7437.00
+Coefficient of Variation: 0.9638
+Saved histogram: graphs/input_tokens_histogram_full.png
+
+============================================================
+Statistics for Output Token Length (GeneratedTokens)
+============================================================
+Mean:                    27.88
+Median (p50):            13.00
+Standard Deviation:      59.86
+p90:                     55.00
+p95:                     90.00
+p99:                     251.46
+Min:                     6.00
+Max:                     1899.00
+Coefficient of Variation: 2.1468
+Saved histogram: graphs/output_tokens_histogram_full.png
+
+============================================================
+Inter-Arrival Time Analysis
+============================================================
+Total requests:          8819
+Mean inter-arrival:      0.3897 seconds
+Median inter-arrival:    0.0638 seconds
+Std inter-arrival:       5.1247 seconds
+Arrival rate (λ):        2.5664 requests/second
+
+============================================================
+Exponential Distribution Test (Poisson Process)
+============================================================
+KS Statistic:            0.519625
+KS p-value:              0.000000
+Result: REJECT exponential (arrivals may NOT be Poisson)
+
+Autocorrelation (lag 1):  -0.0028
+Autocorrelation (lag 5):  -0.0002
+Autocorrelation (lag 10): -0.0025
+
+Saved inter-arrival analysis: graphs/full_interarrival_analysis.png
+
+
+============================================================
+ONE-DAY DATASET ANALYSIS
+============================================================
+Records in first day: 8819
+
+============================================================
+Statistics for Input Token Length (1-day)
+============================================================
+Mean:                    2047.85
+Median (p50):            1469.00
+Standard Deviation:      1973.77
+p90:                     5187.60
+p95:                     7303.30
+p99:                     7436.00
+Min:                     3.00
+Max:                     7437.00
+Coefficient of Variation: 0.9638
+Saved histogram: graphs/input_tokens_histogram_1day.png
+
+============================================================
+Statistics for Output Token Length (1-day)
+============================================================
+Mean:                    27.88
+Median (p50):            13.00
+Standard Deviation:      59.86
+p90:                     55.00
+p95:                     90.00
+p99:                     251.46
+Min:                     6.00
+Max:                     1899.00
+Coefficient of Variation: 2.1468
+Saved histogram: graphs/output_tokens_histogram_1day.png
+
+============================================================
+Inter-Arrival Time Analysis
+============================================================
+Total requests:          8819
+Mean inter-arrival:      0.3897 seconds
+Median inter-arrival:    0.0638 seconds
+Std inter-arrival:       5.1247 seconds
+Arrival rate (λ):        2.5664 requests/second
+
+============================================================
+Exponential Distribution Test (Poisson Process)
+============================================================
+KS Statistic:            0.519625
+KS p-value:              0.000000
+Result: REJECT exponential (arrivals may NOT be Poisson)
+
+Autocorrelation (lag 1):  -0.0028
+Autocorrelation (lag 5):  -0.0002
+Autocorrelation (lag 10): -0.0025
+
+Saved inter-arrival analysis: graphs/1day_interarrival_analysis.png
+
+
+============================================================
+ONE-WEEK DATASET ANALYSIS
+============================================================
+Records in first week: 8819
+
+============================================================
+Statistics for Input Token Length (1-week)
+============================================================
+Mean:                    2047.85
+Median (p50):            1469.00
+Standard Deviation:      1973.77
+p90:                     5187.60
+p95:                     7303.30
+p99:                     7436.00
+Min:                     3.00
+Max:                     7437.00
+Coefficient of Variation: 0.9638
+Saved histogram: graphs/input_tokens_histogram_1week.png
+
+============================================================
+Statistics for Output Token Length (1-week)
+============================================================
+Mean:                    27.88
+Median (p50):            13.00
+Standard Deviation:      59.86
+p90:                     55.00
+p95:                     90.00
+p99:                     251.46
+Min:                     6.00
+Max:                     1899.00
+Coefficient of Variation: 2.1468
+Saved histogram: graphs/output_tokens_histogram_1week.png
+
+============================================================
+Inter-Arrival Time Analysis
+============================================================
+Total requests:          8819
+Mean inter-arrival:      0.3897 seconds
+Median inter-arrival:    0.0638 seconds
+Std inter-arrival:       5.1247 seconds
+Arrival rate (λ):        2.5664 requests/second
+
+============================================================
+Exponential Distribution Test (Poisson Process)
+============================================================
+KS Statistic:            0.519625
+KS p-value:              0.000000
+Result: REJECT exponential (arrivals may NOT be Poisson)
+
+Autocorrelation (lag 1):  -0.0028
+Autocorrelation (lag 5):  -0.0002
+Autocorrelation (lag 10): -0.0025
+
+Saved inter-arrival analysis: graphs/1week_interarrival_analysis.png
+
+============================================================
+Analysis complete! Check the graphs/ directory for visualizations.
+============================================================

@@ -1,0 +1,63 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+*.mat
+*.fig
+*.slxc
+slprj/
+*.autosave
+
+# Results and outputs
+results/*.mat
+plots/*.png
+plots/*.pdf
+plots/*.fig
+plots/*.eps
+logs/*.txt
+logs/*.log
+
+# Keep example results
+!results/.gitkeep
+!plots/.gitkeep
+!logs/.gitkeep
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Python (if any utility scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Backup files
+*.bak
+*.backup
+*~
