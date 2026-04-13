@@ -144,9 +144,6 @@ The project includes comprehensive testing:
 - **Property-Based Tests**: Universal correctness properties
 - **Integration Tests**: End-to-end workflow validation
 
-% Individual component tests will be added in subsequent tasks
-```
-
 ## Algorithms
 
 ### Block Placement (GBP-CR)
@@ -177,12 +174,17 @@ The simulator provides:
 
 If you use this simulator in your research, please cite the corresponding paper:
 
-@article{sun2026optimizing,
-  title={Serving Chain-structured Jobs with Large Memory Footprints
-with Application to Large Foundation Model Serving},
-  author={Sun, Tingyang and He, Ting and I-Hong Hou}
+```bibtex
+@inproceedings{sun2025serving,
+  title={Serving Chain-structured Jobs with Large Memory Footprint with Application to Large Foundation Model Serving},
+  author={Sun, Tingyang and He, Ting and Hou, I-Hong},
+  booktitle={IFIP WG 7.3 Performance 2025},
+  year={2025}
 }
+```
 
 ## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
 
 This project implements the theoretical framework from academic research on distributed LLM inference and chain-structured job processing.
