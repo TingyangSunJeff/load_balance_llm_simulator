@@ -173,6 +173,16 @@ The simulator provides:
 - **Monte Carlo Simulation**: Statistical validation with confidence intervals
 - **Comparison Framework**: Against optimal solutions and baseline algorithms
 
+## Citation
+
+If you use this simulator in your research, please cite the corresponding paper:
+
+@article{sun2026optimizing,
+  title={Serving Chain-structured Jobs with Large Memory Footprints
+with Application to Large Foundation Model Serving},
+  author={Sun, Tingyang and He, Ting and I-Hong Hou}
+}
+
 ## License
 
 This project implements the theoretical framework from academic research on distributed LLM inference and chain-structured job processing.
