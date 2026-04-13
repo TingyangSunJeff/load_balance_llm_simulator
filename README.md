@@ -174,11 +174,13 @@ The simulator provides:
 If you use this simulator in your research, please cite the corresponding paper:
 
 ```bibtex
-@inproceedings{sun2025serving,
-  title={Serving Chain-structured Jobs with Large Memory Footprint with Application to Large Foundation Model Serving},
+@inproceedings{sun2026serving,
+  title={Serving Chain-structured Jobs with Large Memory Footprints with Application to Large Foundation Model Serving},
   author={Sun, Tingyang and He, Ting and Hou, I-Hong},
-  booktitle={IFIP WG 7.3 Performance 2025},
-  year={2025}
+  booktitle={The Twenty-seventh International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc '26)},
+  year={2026},
+  address={Tokyo, Japan},
+  publisher={ACM}
 }
 ```
 
