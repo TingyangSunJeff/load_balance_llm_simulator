@@ -165,7 +165,6 @@ The project includes comprehensive testing:
 ## Performance Analysis
 
 The simulator provides:
-- **Exact Analysis**: For K=2 server chains using flow balance equations
 - **Bounds**: Upper and lower bounds for general K chains
 - **Monte Carlo Simulation**: Statistical validation with confidence intervals
 - **Comparison Framework**: Against optimal solutions and baseline algorithms
